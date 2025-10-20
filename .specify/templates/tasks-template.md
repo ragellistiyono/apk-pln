@@ -45,9 +45,13 @@ description: "Task list template for feature implementation"
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure per implementation plan
+**Constitution Alignment**: Establish foundation for quality, testing, and conventions
+
+- [ ] T001 Create project structure per implementation plan (ensure modularity from start)
 - [ ] T002 Initialize [language] project with [framework] dependencies
-- [ ] T003 [P] Configure linting and formatting tools
+- [ ] T003 [P] Configure linting and formatting tools (dart format, flutter analyze)
+- [ ] T004 [P] Setup testing framework and test directory structure
+- [ ] T005 [P] Configure file size monitoring (if tooling available)
 
 ---
 
@@ -55,16 +59,19 @@ description: "Task list template for feature implementation"
 
 **Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented
 
+**Constitution Alignment**: Establish patterns for modularity, testing, and performance
+
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
 Examples of foundational tasks (adjust based on your project):
 
-- [ ] T004 Setup database schema and migrations framework
-- [ ] T005 [P] Implement authentication/authorization framework
-- [ ] T006 [P] Setup API routing and middleware structure
-- [ ] T007 Create base models/entities that all stories depend on
-- [ ] T008 Configure error handling and logging infrastructure
-- [ ] T009 Setup environment configuration management
+- [ ] T006 Setup state management architecture (ensure testability)
+- [ ] T007 [P] Implement navigation structure (follow platform conventions)
+- [ ] T008 [P] Create design system/theme configuration (ensure UX consistency)
+- [ ] T009 Create base widget components (keep under 500 lines each)
+- [ ] T010 [P] Configure error handling and logging infrastructure
+- [ ] T011 Setup environment configuration management
+- [ ] T012 [P] Establish widget testing patterns and utilities
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -246,6 +253,18 @@ With multiple developers:
 - Commit after each task or logical group
 - Stop at any checkpoint to validate story independently
 - Avoid: vague tasks, same file conflicts, cross-story dependencies that break independence
+
+## Constitution Compliance Checklist
+
+Before marking tasks complete, verify adherence to constitution principles:
+
+- [ ] **File Size**: All modified files remain under 700 lines (target 500)
+- [ ] **Testing**: Appropriate tests written and passing (unit, widget, integration)
+- [ ] **Code Quality**: Code is modular, documented, and follows single responsibility
+- [ ] **UX Consistency**: UI follows design system and platform conventions
+- [ ] **Performance**: No performance regressions; maintains 60 FPS
+- [ ] **Conventions**: Follows Flutter/Dart naming conventions (snake_case files, PascalCase classes)
+- [ ] **Dependencies**: No circular dependencies; proper resource disposal
 
 
 

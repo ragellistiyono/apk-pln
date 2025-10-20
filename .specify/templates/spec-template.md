@@ -80,15 +80,29 @@
 <!--
   ACTION REQUIRED: The content in this section represents placeholders.
   Fill them out with the right functional requirements.
+  
+  IMPORTANT: Requirements must align with constitution principles:
+  - Code Quality: Design for modularity and maintainability
+  - Testing: Ensure requirements are testable
+  - UX Consistency: Follow platform conventions
+  - Performance: Consider performance implications
 -->
 
 ### Functional Requirements
 
 - **FR-001**: System MUST [specific capability, e.g., "allow users to create accounts"]
-- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]  
+- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]
 - **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
 - **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
 - **FR-005**: System MUST [behavior, e.g., "log all security events"]
+
+### Quality & Performance Requirements *(per constitution)*
+
+- **QR-001**: Implementation MUST keep files under 700 lines (target 500 lines)
+- **QR-002**: All business logic MUST have unit tests; widgets MUST have widget tests
+- **QR-003**: UI MUST maintain 60 FPS performance during normal operation
+- **QR-004**: UI MUST provide consistent experience following Material Design/iOS HIG
+- **QR-005**: Code MUST follow Flutter/Dart naming conventions (snake_case files, PascalCase classes)
 
 *Example of marking unclear requirements:*
 

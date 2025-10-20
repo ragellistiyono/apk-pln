@@ -31,7 +31,16 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+Review the feature against `.specify/memory/constitution.md` principles:
+
+- [ ] **File Size Discipline**: Plan accounts for keeping files under 700 lines (target 500)
+- [ ] **Code Quality & Modularity**: Design promotes single responsibility and clear separation of concerns
+- [ ] **Testing Standards**: Test strategy covers unit, widget, and integration testing requirements
+- [ ] **User Experience Consistency**: UI design follows Material/iOS guidelines and maintains consistency
+- [ ] **Performance Requirements**: Design considers 60 FPS, memory usage, and launch time targets
+- [ ] **Flutter/Dart Conventions**: Architecture follows Flutter best practices and naming conventions
+
+**Violations Requiring Justification**: [List any principle violations and their justification, or "None"]
 
 ## Project Structure
 
